@@ -4,7 +4,7 @@ import React from 'react'
 
 const Layout = ({ children }) => {
     return (
-        <div>
+        <div className="flex flex-col justify-between">
             <Navbar />
             { children }
             <Footer />

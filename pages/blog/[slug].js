@@ -1,53 +1,56 @@
-import React from "react";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import Head from "next/head";
-import marked from "marked";
+import Head from 'next/head';
+import { format, parseISO } from 'date-fns';
+import renderToString from 'next-mdx-remote/render-to-string';
+import hydrate from 'next-mdx-remote/hydrate';
 
-const Post = ({ htmlString, data }) => {
+import { getAllPosts } from '../../lib/data';
+
+export default function BlogPage({ title, date, content }) {
+  const hydratedContent = hydrate(content);
+
   return (
-    <>
+    <div>
       <Head>
-        <title>{data.title}</title>
-        <meta title="description" content={data.description} />
+        <title>{title}</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
-    </>
+
+      <main>
+        <div className="pb-4 border-b-2 border-gray-200 mb-4">
+          <h2 className="text-3xl font-bold text-gray-800 ">{title}</h2>
+          <div className="text-gray-600 text-sm">
+            {format(parseISO(date), 'MMMM do, uuu')}
+          </div>
+        </div>
+        <div className="pt-1 prose">{hydratedContent}</div>
+      </main>
+    </div>
   );
-};
+}
 
-export const getStaticPaths = async () => {
-  const files = await fs.readdirSync("posts");
-  // console.log("files: ", files);
-  const paths = files.map(filename => ({
-    params: {
-      slug: filename.replace(".md", "")
-    }
-  }));
-  // console.log("paths: ", paths);
-
-  return {
-    paths,
-    fallback: false
-  };
-};
-
-export const getStaticProps = async ({ params: { slug } }) => {
-  const markdownWithMetadata = await fs
-    .readFileSync(path.join("posts", slug + ".md"))
-    .toString();
-
-  const parsedMarkdown = await matter(markdownWithMetadata);
-
-  const htmlString = await marked(parsedMarkdown.content);
+export async function getStaticProps({ params }) {
+  const { data, content } = getAllPosts().find((item) => item.slug === params.slug);
+  const mdxSource = await renderToString(content);
 
   return {
     props: {
-      htmlString,
-      data: parsedMarkdown.data
-    }
+      ...data,
+      date: data.date.toISOString(),
+      content: mdxSource,
+      revalidate: 1
+    },
   };
-};
+}
 
-export default Post;
+export async function getStaticPaths() {
+  const paths = getAllPosts().map((post) => {
+    return{
+      params: { slug: post.slug }
+    }
+  })
+  return {
+    paths,
+    fallback: false
+    }
+
+}

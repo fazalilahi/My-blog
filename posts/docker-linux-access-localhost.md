@@ -1,8 +1,9 @@
 ---
 title: How to access from inside a Docker Container in Linux
-description: Steps to access allow a docker container to access stuff on the host
-
+# description: Steps to access allow a docker container to access stuff on the host
+date: 2021-02-14T19:05:27.220Z
 ---
+
 1. Enable `route_localnet` for `docker0` interface:
 
 ```
