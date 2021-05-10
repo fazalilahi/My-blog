@@ -5,7 +5,7 @@ import hydrate from 'next-mdx-remote/hydrate';
 
 import { getAllPosts } from '../../lib/data';
 
-export default function BlogPage({ title, date, content }) {
+export default function BlogPage({ title, date, content, tag }) {
   const hydratedContent = hydrate(content);
 
   return (
@@ -16,13 +16,14 @@ export default function BlogPage({ title, date, content }) {
       </Head>
 
       <main>
-        <div className="pb-4 border-b-2 border-gray-200 mb-4">
+        <div className="pb-4 pt-10 border-b-2 border-gray-200 mb-4">
           <h2 className="text-3xl font-bold text-gray-800 ">{title}</h2>
-          <div className="text-gray-600 text-sm">
+          <div className="py-1 text-gray-600 text-sm">
             {format(parseISO(date), 'MMMM do, uuu')}
           </div>
+          {tag ? <span className="border rounded-md p-1">{tag}</span> : ''}
         </div>
-        <div className="pt-1 prose">{hydratedContent}</div>
+        <article className="pt-1 prose">{hydratedContent}</article>
       </main>
     </div>
   );
