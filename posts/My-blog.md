@@ -7,7 +7,10 @@ meta: kladsjglkdsj;fljadskfljadsflkdas
 
 ### My personal blog
 
-ajkgha
+ajkgha<br />
 sgfgsfdg
 gsdfgsg
 shs
+![fazal](/fazal.png)
+
+<img src="/fazal.png" width="100" height="100" />

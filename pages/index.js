@@ -4,22 +4,24 @@ import { format, parseISO } from 'date-fns';
 import { getAllPosts } from '../lib/data';
 
 
+
 export default function Home({ posts }) {
   return (
-    
+
     <div>
       <Head>
         <title>Blog</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fazal.png" />
       </Head>
      
       <h1 className="p-0.5 pt-5 font-bold text-3xl align-bottom">My Articles</h1>
+     
 
-      <div className="space-y-4">
+      <article className="space-y-4">
         {posts.map((item) => (
           <BlogListItem key={item.slug} {...item} />
         ))}
-      </div>
+      </article>
     </div>
   );
 }
@@ -43,13 +45,15 @@ function BlogListItem({ slug, title, date, meta, tag }) {
   return (
    <Link href={`/blog/${slug}`}>
     <a className="p-0.5 text-align-left">
-      <div className="border rounded-md p-4 hover:shadow-inner transition duration-200 ease-in ">    
-            <div className="pb-2 font-bold text-xl text-blue-600 hover:text-blue-500">{title}</div>
+      <div className="rounded-md border border-white hover:border-gray-200 dark:border-gray-600 dark:hover:border-gray-700">
+      <div className="rounded-md p-4 transition duration-200 ease-in  shadow hover:shadow-inner hover:bg-gray-100 dark:hover:bg-black">    
+            <div className="pb-2 font-bold text-xl text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-500">{title}</div>
             <span className="text-sm float-right">
               {format(parseISO(date), 'MMM d')}
             </span>
-            {tag ? <span className="border rounded-md p-1">{tag}</span> : ''}
+            {tag ? <span className="border border-gray-500 rounded-md p-1">{tag}</span> : ''}
             <div className="pt-2 text-md">{meta}</div>
+      </div>
       </div>
    </a>
    </Link>

@@ -3,6 +3,7 @@ import { format, parseISO } from 'date-fns';
 import renderToString from 'next-mdx-remote/render-to-string';
 import hydrate from 'next-mdx-remote/hydrate';
 
+
 import { getAllPosts } from '../../lib/data';
 
 export default function BlogPage({ title, date, content, tag }) {
@@ -12,18 +13,18 @@ export default function BlogPage({ title, date, content, tag }) {
     <div>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fazal.png" />
       </Head>
 
       <main>
-        <div className="pb-4 pt-10 border-b-2 border-gray-200 mb-4">
-          <h2 className="text-3xl font-bold text-gray-800 ">{title}</h2>
-          <div className="py-1 text-gray-600 text-sm">
+        <div className="pb-4 pt-10 border-b-2 mb-4 border-gray-500">
+          <h2 className="text-3xl font-bold">{title}</h2>
+          <div className="py-1 text-sm">
             {format(parseISO(date), 'MMMM do, uuu')}
           </div>
-          {tag ? <span className="border rounded-md p-1">{tag}</span> : ''}
+          {tag ? <span className="border border-gray-500 rounded-md p-1">{tag}</span> : ''}
         </div>
-        <article className="pt-1 prose">{hydratedContent}</article>
+        <article className="pt-1 prose prose-blue text-gray-600 dark:text-gray-300">{hydratedContent}</article>
       </main>
     </div>
   );
