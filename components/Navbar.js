@@ -1,17 +1,19 @@
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 
 
 const Navbar = () => {
 
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme } = useTheme()    
 
     return (
-        <div className="flex justify-center space-x-4 pb-6">
+        <div className="flex justify-center items-center space-x-4 pb-6">
             <Link href='/'><a>Home</a></Link>
             <Link href='/about'><a>About</a></Link>
-            <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>{theme}</button>
-
+            <span onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+                { theme === 'dark' ?  <Image src="/light.svg" width={24} height={24} /> : <Image src="/dark.svg" width={24} height={24} /> }
+            </span>
         </div>
     )
 }

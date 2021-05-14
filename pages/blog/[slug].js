@@ -24,7 +24,7 @@ export default function BlogPage({ title, date, content, tag }) {
           </div>
           {tag ? <span className="border border-gray-500 rounded-md p-1">{tag}</span> : ''}
         </div>
-        <article className="pt-1 prose prose-blue text-gray-600 dark:text-gray-300">{hydratedContent}</article>
+        <article className="pt-1 prose prose-blue text-gray-600 dark:text-gray-300 dark:prose-dark">{hydratedContent}</article>
       </main>
     </div>
   );
