@@ -8,7 +8,7 @@ const Navbar = () => {
     const { theme, setTheme } = useTheme()    
 
     return (
-        <div className="flex justify-center items-center space-x-4 pb-6">
+        <div className="flex justify-center items-center space-x-4 pb-16">
             <Link href='/'><a>Home</a></Link>
             <Link href='/about'><a>About</a></Link>
             <span onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
