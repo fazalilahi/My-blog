@@ -6,7 +6,8 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
-        <body className="bg-gray-100 text-gray-600 dark:bg-gray-900 dark:text-gray-300 border-t-4 border-blue-600 transition duration-200 ease-in">
+        <body className="transition ease-in duration-300 bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 font-light">
+          <div className="p-1 bg-gradient-to-l from-blue-600"></div>
           <Main />
           <NextScript />
         </body>
