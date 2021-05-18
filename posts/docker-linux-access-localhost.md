@@ -1,8 +1,8 @@
 ---
-title: How to xyz.....
+title: How to access from inside a Docker Container in Linux
 # description: Steps to access allow a docker container to access stuff on the host
 date: 2021-02-12T19:09:27.220Z
-tag: css
+tag: bla
 meta: dashfjkhsdjkfjlfkdhjkl
 ---
 
