@@ -17,7 +17,7 @@ export default function BlogPage({ title, date, content, tag }) {
       </Head>
 
       <main>
-        <div className="pb-4 pt-10 border-b-2 mb-4 border-gray-500">
+        <div className="pb-4 pt-5 border-b-2 mb-4 border-gray-500">
           <h2 className="text-3xl font-bold">{title}</h2>
           <div className="py-2 text-sm">
             {format(parseISO(date), 'MMMM do, uuu')}
