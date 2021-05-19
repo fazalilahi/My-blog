@@ -45,13 +45,13 @@ function BlogListItem({ slug, title, date, meta, tag }) {
   return (
    <Link href={`/blog/${slug}`}>
     <a className="p-0.5">
-      <article className="rounded-md border border-white hover:border-gray-200 dark:border-gray-600 dark:hover:border-gray-700">
-      <div className="rounded-md p-4 transition duration-100 ease-in  shadow hover:shadow-inner bg-gray-50 bg-gradient-to-br from-gray-100 hover:bg-gray-100 dark:bg-none dark:bg-gray-800 dark:hover:bg-gray-900">    
+      <article className="rounded-md dark:hover:border-gray-800">
+      <div className="rounded-md p-4 transition duration-100 ease-in  shadow hover:shadow-inner bg-gray-50 bg-gradient-to-br from-gray-100 hover:bg-gray-100 dark:bg-none dark:bg-gray-800 dark:hover:opacity-90">    
             <div className="pb-2 font-bold text-xl text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-500">{title}</div>
             <span className="text-sm float-right">
               {format(parseISO(date), 'MMM d')}
             </span>
-            {tag ? <span className="border border-gray-500 rounded-md p-1">{tag}</span> : ''}
+            {tag ? <span className="bg-gray-200 dark:bg-gray-700 rounded-md p-1">{tag}</span> : ''}
             <div className="pt-2 text-md">{meta}</div>
       </div>
       </article>
