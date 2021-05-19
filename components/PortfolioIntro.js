@@ -4,10 +4,11 @@ import Link from "next/link";
 //skills data and rating
 const PortfolioIntro = () => {
     const skills = [
-        { id: 1, known: 'JAVASCRIPT', rating: 90}, 
-        {id: 2, known:' REACT', rating: 90 },
-        {id: 3, known:' NODEJS', rating: 90 },
-        {id: 4, known:' CSS', rating: 90 },
+        { id: 1, known: 'JAVASCRIPT', rating: 85}, 
+        {id: 2, known: 'REACT', rating: 90 },
+        {id: 3, known: 'NODEJS', rating: 80 },
+        {id: 4, known: 'FIGMA & ADOBE', rating: 90 },
+        {id: 5, known: 'CSS', rating: 80 },
     ]
    
         const listSkills = skills.map((skill) => 
