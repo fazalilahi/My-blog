@@ -57,7 +57,7 @@ const PortfolioIntro = () => {
                 <li> Unit Testing <br /> </li>
             </ul>
 
-            <h1 className="text-md font-semibold pt-4 dark:text-blue-300">EXPERTISE</h1>
+            <h1 className="text-md font-semibold pt-4 dark:text-blue-300">REFERENCE</h1>
             <div className="py-2">
             Developer & Maker of Glimpses <br />
             <h1 className="font-medium">Mr. Anees Ahammed</h1>
