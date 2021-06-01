@@ -18,7 +18,7 @@ const PortfolioEnd = () => {
                 <Link href="https://github.com/fazalilahi/colormyworld">
                     <div className="hover:bg-gray-200 dark:hover:bg-gray-800 rounded-md p-3">
                     <h1 className="font-medium">Color my world</h1> 
-                    AR project on interior designing. Mobile using java and web using plask.
+                    AR project on interior designing. Mobile using java and web using flask.
                     </div>
                 </Link> 
 
