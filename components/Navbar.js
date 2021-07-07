@@ -10,6 +10,7 @@ const Navbar = () => {
     return (
         <div className="flex justify-center items-center space-x-4 pb-16">
             <Link href='/'><a>Home</a></Link>
+            <Link href='/portfolio'><a>Resume</a></Link>
             <Link href='/about'><a>About</a></Link>
             <span onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
                 { theme === 'dark' ?  <Image src="/light.svg" width={24} height={24} /> : <Image src="/dark.svg" width={24} height={24} /> }
