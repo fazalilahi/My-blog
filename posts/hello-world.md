@@ -2,7 +2,7 @@
 title: 'Hello World! 👋🏼'
 meta: 'I have always wanted to start my blog. Finally, here it is.'
 tag: Intro
-date: 2021-05-18T05:35:07.322Z
+date: 2021-05-18
 ---
 
 I have always wanted to start my blog.<br />
