@@ -2,7 +2,7 @@
 title: 'How to Make a Markdown Blog With Next.js! 🖥 '
 meta: 'This post will try to create a simple blog with Next.js 🚀.'
 tag: 'Learn'
-date: 2021-05-18T05:35:07.322Z
+date: 2021-07-16
 ---
 
 This post will try to create a simple blog with Next.js 🚀.
