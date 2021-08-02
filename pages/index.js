@@ -10,7 +10,7 @@ export default function Home({ posts }) {
 
     <div>
       <Head>
-        <title>Blog</title>
+        <title>Home</title>
         <link rel="icon" href="/fazal.png" />
       </Head>
      
