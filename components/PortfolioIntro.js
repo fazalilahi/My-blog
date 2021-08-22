@@ -26,10 +26,10 @@ const PortfolioIntro = () => {
 
     return (
         <div>
-            <Link href="https://github.com/fazalilahi"><Image src="/github.svg" width={20} height={20}></Image></Link> &nbsp;&nbsp;
-            <Link href="https://www.linkedin.com/in/fazalilahi/"><Image src="/linkedin.svg" width={20} height={20}></Image></Link> &nbsp;&nbsp;
-            <Link href="https://twitter.com/ifazalcg"><Image src="/twitter.svg" width={20} height={20}></Image></Link> &nbsp;&nbsp;
-            <Link href="mailto:fazalchemmengath@gmail.com"><Image src="/mail.svg" width={20} height={20}></Image></Link> <br />
+            <Link href="https://github.com/fazalilahi"><a><Image src="/github.svg" width={20} height={20}></Image></a></Link> &nbsp;&nbsp;
+            <Link href="https://www.linkedin.com/in/fazalilahi/"><a><Image src="/linkedin.svg" width={20} height={20}></Image></a></Link> &nbsp;&nbsp;
+            <Link href="https://twitter.com/ifazalcg"><a><Image src="/twitter.svg" width={20} height={20}></Image></a></Link> &nbsp;&nbsp;
+            <Link href="mailto:fazalchemmengath@gmail.com"><a><Image src="/mail.svg" width={20} height={20}></Image></a></Link> <br />
             <h1 className="font-thin text-6xl">FAZAL</h1>
             <h1 className="font-bold text-6xl dark:text-blue-500 pb-3">ILAHI</h1>
             <span className="font-semibold text-sm bg-white border dark:text-gray-200 dark:bg-gray-700 dark:border-gray-600 shadow-inner rounded-bl-2xl rounded-tr-2xl px-3 py-2">WEB DESIGNER & DEVELOPER</span>
@@ -63,7 +63,7 @@ const PortfolioIntro = () => {
             <div className="py-2">
             Developer & Maker of Glimpses <br />
             <h1 className="font-medium">Mr. Anees Ahammed</h1>
-            <Link href="https://twitter.com/AneesAhammed"><Image src="/twitter.svg" width={20} height={20}></Image></Link> <br />
+            <Link href="https://twitter.com/AneesAhammed"><a><Image src="/twitter.svg" width={20} height={20} /></a></Link> <br />
             </div>
         </div>
     )
