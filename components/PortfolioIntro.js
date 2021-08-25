@@ -26,6 +26,7 @@ const PortfolioIntro = () => {
 
     return (
         <div>
+            <span className="float-right"><a href="/resume.pdf" download><Image src="/download.svg" width={20} height={20} /></a></span>
             <Link href="https://github.com/fazalilahi"><a><Image src="/github.svg" width={20} height={20}></Image></a></Link> &nbsp;&nbsp;
             <Link href="https://www.linkedin.com/in/fazalilahi/"><a><Image src="/linkedin.svg" width={20} height={20}></Image></a></Link> &nbsp;&nbsp;
             <Link href="https://twitter.com/ifazalcg"><a><Image src="/twitter.svg" width={20} height={20}></Image></a></Link> &nbsp;&nbsp;
