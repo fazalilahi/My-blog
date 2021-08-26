@@ -56,8 +56,8 @@ const PortfolioIntro = () => {
             <ul className="list-disc list-inside py-2">
                 <li>Full Stack Web Development (MERN) <br /></li>
                 <li> UI/UX <br /> </li>
-                <li> Unit Testing <br /> </li>
                 <li> Data visualization <br /> </li>
+                <li> Unit Testing <br /> </li>
             </ul>
 
             <h1 className="text-md font-semibold pt-4 dark:text-blue-300">REFERENCE</h1>
