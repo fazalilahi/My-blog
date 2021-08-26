@@ -8,7 +8,7 @@ const PortfolioIntro = () => {
         {id: 2, known: 'NODEJS', rating: 80 },
         {id: 3, known: 'FIGMA & ADOBE', rating: 90 },
         {id: 4, known: 'JAVA', rating: 70 },
-        {id: 5, known: 'CSS', rating: 80 },
+        {id: 5, known: 'D3js', rating: 80 },
     ]
    
         const listSkills = skills.map((skill) => 
@@ -56,8 +56,8 @@ const PortfolioIntro = () => {
             <ul className="list-disc list-inside py-2">
                 <li>Full Stack Web Development (MERN) <br /></li>
                 <li> UI/UX <br /> </li>
-                <li> Logo Designing <br /> </li>
                 <li> Unit Testing <br /> </li>
+                <li> Data visualization <br /> </li>
             </ul>
 
             <h1 className="text-md font-semibold pt-4 dark:text-blue-300">REFERENCE</h1>
