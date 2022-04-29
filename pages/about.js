@@ -13,7 +13,7 @@ const about = () => {
            <figure className="float-right"><Image src="/fazal.png" width={100} height={100} /></figure>
             <p>
                Hi there! 👋🏼 <br />
-               My name is Fazal Ilahi, I am  a Freelance web designer, full-stack developer and a nerd!
+               My name is Fazal Ilahi, I am  a web developer and a nerd!
                Loves css & javascript.
                If you’ve made it this far, feel free to reach out to me <Link href="mailto:fazalchemmengath@gmail.com"><a className="font-medium">@fazalilahi</a></Link> :)
             </p>
