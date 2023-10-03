@@ -9,14 +9,14 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-center items-center space-x-4 pb-16">
-            <Link href='/'><a className="hover:text-blue-400">Home</a></Link>
-            <Link href='/portfolio'><a className="hover:text-blue-400">Resume</a></Link>
-            <Link href='/about'><a className="hover:text-blue-400">About</a></Link>
+            <Link href='/' className="hover:text-blue-400">Home</Link>
+            <Link href='/portfolio' className="hover:text-blue-400">Resume</Link>
+            <Link href='/about' className="hover:text-blue-400">About</Link>
             <span onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-                { theme === 'dark' ?   <Link href='#'><a><Image src="/light.svg" width={24} height={24} /></a></Link> : <Link href="#"><a><Image src="/dark.svg" width={24} height={24} /></a></Link> }
+                { theme === 'dark' ?   <Link href='#'><Image src="/light.svg" width={24} height={24} /></Link> : <Link href="#"><Image src="/dark.svg" width={24} height={24} /></Link> }
             </span>
         </div>
-    )
+    );
 }
 
 

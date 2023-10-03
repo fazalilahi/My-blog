@@ -43,8 +43,8 @@ export async function getStaticProps() {
 function BlogListItem({ slug, title, date, meta, tag }) {
 
   return (
-   <Link href={`/blog/${slug}`}>
-    <a className="p-0.5">
+    (<Link href={`/blog/${slug}`} className="p-0.5">
+
       <article className="rounded-md dark:hover:border-gray-800">
       <div className="rounded-md p-4 transition duration-100 ease-in  shadow hover:shadow-inner bg-gray-50 bg-gradient-to-br from-gray-100 hover:bg-gray-100 dark:bg-none dark:bg-gray-800 dark:hover:opacity-90">    
             <div className="pb-2 font-bold text-xl text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-500">{title}</div>
@@ -55,9 +55,7 @@ function BlogListItem({ slug, title, date, meta, tag }) {
             <div className="pt-2 text-md">{meta}</div>
       </div>
       </article>
-   </a>
-   </Link>
-      
 
+    </Link>)
   );
 }
