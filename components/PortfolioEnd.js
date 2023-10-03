@@ -5,6 +5,15 @@ const PortfolioEnd = () => {
         <div>
             <h1 className="text-md font-semibold pt-4 dark:text-blue-300">EXPERIENCE & PROJECTS</h1>
             <div className="pt-4">
+                2021 - (Present) <br />
+                <Link href="https://tickertape.in/">
+                    <div className="hover:bg-gray-200 dark:hover:bg-gray-800 rounded-md p-3">
+                    <h1 className="font-medium">Tickertape/Smallcase</h1> 
+                    Software Development Engineer (Frontend) at Tickertape in Bangalore.
+                    </div>
+                </Link>
+                <br />
+
                 2021 <br />
 
                 <Link href="https://fazalilahi.me/">
@@ -30,25 +39,25 @@ const PortfolioEnd = () => {
                     Screensharing and video chat application through WebRTC. Screen recording using electronjs.
                     </div>
                 </Link> 
-                <br />
+                {/* <br /> */}
 
                 <br /> 2020 <br />
-
+{/* 
                 <Link href="https://shielded-shore-55921.herokuapp.com/">
                     <div className="hover:bg-gray-200 dark:hover:bg-gray-800 rounded-md p-3">
                     <h1 className="font-medium">Contact Keeper</h1> 
                     A react Contact book with all CRUD functions on MongoDB. FullStack webapp using MERN (MongoDB, Express, React, Nodejs) running on heroku.
                     </div>
-                </Link> 
+                </Link>  */}
 
 
 
-                <Link href="https://vast-shelf-51797.herokuapp.com/">
+                {/* <Link href="https://vast-shelf-51797.herokuapp.com/">
                     <div className="hover:bg-gray-200 dark:hover:bg-gray-800 rounded-md p-3">
                     <h1 className="font-medium">Restful API’s</h1> 
                     API for saving contacts, register user, login, update, delete you can follow the documentation to test on postman (Create Read Update API).
                     </div>
-                </Link> 
+                </Link>  */}
 
 
 
