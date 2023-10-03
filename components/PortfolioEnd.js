@@ -16,12 +16,12 @@ const PortfolioEnd = () => {
 
                 2021 <br />
 
-                <Link href="https://fazalilahi.me/">
+                {/* <Link href="https://fazalilahi.me/">
                     <div className="hover:bg-gray-200 dark:hover:bg-gray-800 rounded-md p-3">
                     <h1 className="font-medium">Personal Website</h1> 
                     Tech blog & portfolio website using nextjs.
                     </div>
-                </Link> 
+                </Link>  */}
 
 
                 <Link href="https://github.com/fazalilahi/colormyworld">
